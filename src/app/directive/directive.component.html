@@ -1,0 +1,22 @@
+<h1>Liaison1 : Double data binding [(ngModel)]</h1>
+<input type="text" [(ngModel)] = "name" />
+<p> Hello {{name}} </p>
+<hr>
+
+<h1>Liaison2 : @Input</h1>
+{{ messageInput }} 
+
+
+<h1>Liaison3: <a (click)="execute()" href ="#">@Output</a></h1>
+<hr>
+
+<p *ngIf="status"> p1 </p>
+<p *ngIf="!status"> p2 </p>
+<button type="" (click)="inverser()">Valider</button> 
+
+<ul>
+	<li *ngFor="let item of texts">
+		{{item}}
+	</li>
+	
+</ul>

@@ -1,4 +1,5 @@
-<!-- mettez ici les deux components -->
+<app-directive [messageInput]="input" (send)="getMessage($event)"></app-directive>
 
+{{output}}
 
-
+<app-liaisons (cle)="ecrireConsole()"></app-liaisons>
